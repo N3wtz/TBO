@@ -55,8 +55,6 @@ R = {
 }
 
 
-
-# Function to perform the CYK Algorithm
 def cykParse(words):
     n = len(words)
     T = [[set([]) for _ in range(n)] for _ in range(n)]
@@ -79,12 +77,10 @@ def cykParse(words):
     else:
         return ":red[Kalimat Anda Salah.]"
 
-# Function to run CYK algorithm
 def run_cyk(input_sentence):
     words = input_sentence.split()
     return cykParse(words)
 
-# Streamlit app
 def main():
     st.title("APAKAH :red[KALIMAT] ANDA BENAR ?")
     st.title("CEK :red[KALIMAT] ANDA DISINI")
