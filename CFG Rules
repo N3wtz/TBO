@@ -1,10 +1,11 @@
 #CFG Rules
 R= {
-    "K": [["S", "P"], ["P1", "O"], ["P1", "Pel"], ["P1", "Ket"],  ["P2", "Pel"],  ["P2", "Ket"],  ["P3", "Ket"], ["P4", "Ket"]],
+    "K": [["S", "P"], ["P1", "O"], ["P1", "Pel"], ["P1", "Ket"], ["P1", "P2"], ["P1", "P3"], ["P1", "P4"]],
     "P1": [["S", "P"]],
-    "P2" :[["P1", "O"]],
-    "P3" : [["P1", "Pel"]],
-    "P4" : [["P2", "Pel"]],
+    "P2": [["O", "Pel"]],
+    "P3": [["O", "Ket"]],
+    "P4": [["P2", "Ket"]],
+
     "S": [["NP", "AdjP"], ["NumP","NP"], ["NP","Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
     "P": [["Prep", "NP"],["Prep", "AdjP"], ["AdvP", "VP"], ["Adv", "AdjP"], ["Verb"]],
     "O": [["NP", "AdjP"], ["NumP", "NP"], ["NP", "Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
