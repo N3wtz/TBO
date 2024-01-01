@@ -58,7 +58,7 @@ def run_cyk(input_sentence):
 def main():
     st.title("APAKAH :red[KALIMAT] ANDA BENAR ?")
     st.title("CEK :red[KALIMAT] ANDA DISINI")
-    input_sentence = st.text_input(":green[ Contoh : Gagas makan Komodo kemarin]", placeholder="Masukan Kalimat Disini")
+    input_sentence = st.text_input(":green[ Contoh : gagas menjaga komodo itu]", placeholder="Masukan Kalimat Disini (Gunakanlah huruf kecil)")
 
     if st.button("Lihat Hasil"):
         if input_sentence:
