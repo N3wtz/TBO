@@ -1,0 +1,28 @@
+#CFg Rules
+R= {
+    "K": [["S", "P"], ["P1", "O"], ["P1", "Pel"], ["P1", "Ket"],  ["P2", "Pel"],  ["P2", "Ket"],  ["P3", "Ket"], ["P4", "Ket"]],
+    "P1": [["S", "P"]],
+    "P2" :[["P1", "O"]],
+    "P3" : [["P1", "Pel"]],
+    "P4" : [["P2", "Pel"]],
+    "S": [["NP", "AdjP"], ["NumP","NP"], ["NP","Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
+    "P": [["Prep", "NP"],["Prep", "AdjP"], ["AdvP", "VP"], ["Adv", "AdjP"], ["Verb"]],
+    "O": [["NP", "AdjP"], ["NumP", "NP"], ["NP", "Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
+    "Pel": [["NP", "AdjP"], ["NumP", "NP"], ["NP", "Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"], ["Verb"], ["Adj"]],
+    "Ket": [["PP", "NP"], ["Prep", "AdjP"], ["Adv", "AdjP"], ["Num", "NP"], ["Num"], ["Adj"] ],
+    "NP": [["NP", "AdjP"], ["NumP","NP"], ["NP","Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
+    "VP": [["Prep", "NP"],["Prep", "AdjP"], ["AdvP", "VP"], ["Adv", "AdjP"], ["Verb"]],
+    "PP": [["Prep"], ["PP", "NP"], ["Prep","AdjP"]],
+    "AdjP": [["Adj"], ["Adv", "AdjP"]],
+    "AdvP": [ ["Adv"], ["Adv", "AdvP"]],
+    "NumP": [["Num"], ["Num", "NumP"]],
+    
+    "PropNoun": [["gagas"], ["alaya"], ["komodo"], ["surya"], ["duta"], ["krisna"], ["david"], ["nengah"], ["putu"], ["dika"], ["dewi"], ["siti"], ["rahayu"], ["ani"], ["adi"], ["santoso"], ["ratna"], ["hadi"], ["prayitno"], ["kiki"], ["sinta"], ["haryono"], ["baikal"], ["copacabana"], ["mediterania"], ["rio"], ["de"], ["janeiro"], ["bali"], ["bandung"], ["bogor"], ["monas"], ["denpasar"], ["surabaya"], ["jakarta"], ["jawa"], ["arab"], ["saudi"], ["jepang"], ["medan"]],
+    "Noun": [["nenek"], ["daun"], ["ubi"], ["kebun"], ["orang"], ["acara"], ["mahasiswa"], ["kegiatan"], ["pengabdian"], ["dewasa"], ["wahana"], ["pemadam"], ["kebakaran"], ["waktu"], ["menyelamatkan"], ["penduduk"], ["desa"], ["anak"], ["laki-laki"], ["bermain"], ["taman"], ["kota"], ["ibu"], ["siswa"], ["perpustakaan"], ["kampus"], ["polisi"], ["ketertiban"], ["jalan"], ["burung"], ["merapati"], ["siang"], ["hari"], ["ikan"], ["koi"], ["kolam"], ["taman"], ["kuda"], ["pacuan"], ["lintasan"], ["pacu"], ["monyet"], ["kecil"], ["ranting"], ["pohon"], ["kelinci"], ["teman"], ["kebun"], ["lumba-lumba"], ["laut"], ["lepas"], ["kupu-kupu"], ["bunga"], ["sapi"], ["nektar"], ["lebah"], ["rumput"], ["padang"], ["buaya"], ["tepi"], ["danau"], ["kuliah"], ["seminar"], ["dr."], ["universitas"], ["pantai"], ["pemimpin"], ["proyek"], ["bu"], ["pemilik"], ["warung"], ["kopi"], ["prof."], ["pakar"], ["bidang"], ["ekologi"], ["juara"], ["lomba"], ["menyanyi"], ["pembicara"], ["tetangga"], ["dunia"], ["keindahan"], ["pantainya"], ["bukit"], ["tinggi"], ["pemandangan"], ["alam"], ["danau"], ["pantai"], ["ikon"], ["kota"], ["kulinernya"], ["hujan"], ["tengah"], ["budaya"], ["malam"], ["timur"], ["pentas"], ["ogoh-ogoh"], ["tahun"], ["baru"], ["saka"], ["negara"], ["pengahsil"], ["minyak"], ["pasang"], ["sepatu"], ["rak"], ["buah"], ["rumah"], ["tahap"], ["konstruksi"], ["ekor"], ["kucing"], ["belakang"], ["pengunjung"], ["kamar"], ["tidur"], ["pertunjukan"], ["teater"], ["mobil"], ["digunakan"], ["kotak"], ["pagi"], ["mainan"], ["anak-anak"], ["bungkus"], ["rokok"], ["sejarah"], ["kebudayaan"], ["bahasa"], ["asrama"], ["putri"], ["pemain"], ["sepak"], ["bola"], ["bapak"], ["kakek"], ["kursi"], ["rotan"], ["pelatih"], ["tari"], ["rencana"], ["perjalanan"], ["sangat"], ["pengembangan"], ["teknologi"], ["pesat"], ["gadis"], ["kecil"], ["boneka"], ["barunya"], ["air"], ["terjun"], ["pegunungan"], ["yang"], ["mekar"], ["kesegaran"], ["pikiran"], ["kebanggaan"], ["setia"], ["udara"], ["rasa"], ["cokelat"], ["rindang"], ["cita-cita"], ["pendorong"], ["kesuksesan"], ["pameran"], ["karya"], ["seni"], ["kontemporer"], ["lokal"], ["daya"], ["tarik"], ["wisata"], ["daerah"], ["hewan"], ["peliharaan"]],
+    "Pronoun": [["dia"], ["itu"], ["saya"], ["kita"], ["kami"], ["mereka"], ["anda"], ["ia"], ["aku"], ["tersebut"], ["ini"], ["kalian"], ["beliau"]],
+    "Verb": [["mengambil"], ["menghadiri"], ["mengikuti"], ["menaiki"], ["mempunyai"], ["memasak"], ["makanan"], ["belajar"], ["menjaga"], ["terbang"], ["berenang"], ["berlari"], ["bergelantungan"], ["melompat-lompat"], ["bermain"], ["hinggap"], ["mengumpulkan"], ["mengunyah"], ["adalah"], ["berjemur"], ["hadir"], ["memberikan"], ["berlibur"], ["merupakan"], ["menjadi"], ["membantu"], ["terkenal"], ["memiliki"], ["dikenal"], ["terletak"], ["ramai"], ["menyambut"], ["terpajang"], ["sedang"], ["hadir"], ["disiram"], ["berisi"], ["membeli"], ["meneliti"], ["kursus"], ["menyukai"], ["dua"], ["disusun"], ["berlangsung"], ["seni"], ["menampilkan"], ["keluarga"], ["hewan"]],
+    "Prep":[["di"], ["itu"], ["tersebut"], ["saja"], ["untuk"], ["dari"], ["pada"], ["dalam"], ["dengan"], ["ini"], ["orang"],
+    "Adv" : [["jarang"], ["sering"], ["selalu"], ["sedang"], ["hanya"], ["diperbolehkan"], ["akan"], ["sangat"], ["dilakukan"], ["sudah"], ["lama"], ["harus"]],
+    "Adj" : [["lezat"], ["cepat"], ["indah"], ["terdalam"], ["terbesar"], ["nyaman"], ["besar"], ["hitam"], ["putih"], ["luas"], ["baik"], ["senang"], ["menghibur"], ["tua"], ["panjang"], ["sejuk"], ["kelemahannya"], ["kesejukan"], ["romantis"], ["manis"], ["tinggi"], [""], [""]],
+    "Num": [["sedikit"], ["banyak"], ["sekitar"], ["lima"], ["para"], ["seekor"], ["belas"], ["delapan"], ["dua"], ["sepuluh"], ["tujuh"], ["puluh"], ["setiap"], ["tiga"]],
+}
