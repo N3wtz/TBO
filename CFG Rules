@@ -6,11 +6,12 @@ R= {
     "P3": [["O", "Ket"]],
     "P4": [["P2", "Ket"]],
 
-    "S": [["NP", "AdjP"], ["NumP","NP"], ["NP","Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
-    "P": [["Prep", "NP"],["Prep", "AdjP"], ["AdvP", "VP"], ["Adv", "AdjP"], ["Verb"]],
-    "O": [["NP", "AdjP"], ["NumP", "NP"], ["NP", "Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
-    "Pel": [["NP", "AdjP"], ["NumP", "NP"], ["NP", "Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"], ["Verb"], ["Adj"]],
-    "Ket": [["PP", "NP"], ["Prep", "AdjP"], ["Adv", "AdjP"], ["Num", "NP"], ["Num"], ["Adj"] ],
+    "S": [["NP"]],
+    "P": [["VP"]],
+    "O": [["NP"]],
+    "Pel": [["NP"], ["Verb"], ["AdjP"]],
+    "Ket": [["PP", "NP"], ["Prep", "AdjP"], ["Adv", "AdjP"], ["Num", "NP"], ["NumP"], ["AdjP"]],
+    
     "NP": [["NP", "AdjP"], ["NumP","NP"], ["NP","Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
     "VP": [["Prep", "NP"],["Prep", "AdjP"], ["AdvP", "VP"], ["Adv", "AdjP"], ["Verb"]],
     "PP": [["Prep"], ["PP", "NP"], ["Prep","AdjP"]],
