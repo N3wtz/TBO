@@ -7,14 +7,14 @@ R= {
     "P4": [["P2", "Ket"]],
 
     "S": [["NP"]],
-    "P": [["VP"]],
+    "P": [["VP"], ["Adv", "AdjP"]],
     "O": [["NP"]],
     "Pel": [["NP"], ["Verb"], ["AdjP"]],
     "Ket": [["PP", "NP"], ["Prep", "AdjP"], ["Adv", "AdjP"], ["Num", "NP"], ["NumP"], ["AdjP"]],
     
     "NP": [["NP", "AdjP"], ["NumP","NP"], ["NP","Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["PropNoun"], ["Pronoun"], ["Noun"]],
-    "VP": [["Prep", "NP"],["Prep", "AdjP"], ["AdvP", "VP"], ["Adv", "AdjP"], ["Verb"]],
-    "PP": [["Prep"], ["PP", "NP"], ["Prep","AdjP"]],
+    "VP": [["Prep", "NP"],["Prep", "AdjP"], ["AdvP", "VP"], ["Verb"]],
+    "PP": [["PP", "NP"], ["Prep","AdjP"]],
     "AdjP": [["Adj"], ["Adv", "AdjP"]],
     "AdvP": [ ["Adv"], ["Adv", "AdvP"]],
     "NumP": [["Num"], ["Num", "NumP"]],
